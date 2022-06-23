@@ -24,18 +24,20 @@ import pytest
 
 # pytest offers fixtures to replace certain parts of tests that are repeated frequently
 
-@pytest.fixture
-def test_client():
-    return TestClient(app=app)
+# fixtures replaced in conftest.py file
 
-@pytest.fixture
-def valid_user_data():
-    return {
-        'name': 'Franz',
-        'age': 36,
-        'email': 'email@example.cum',
-        'password': 'fucktypos'
-    }
+# @pytest.fixture
+# def test_client():
+#     return TestClient(app=app)
+#
+# @pytest.fixture
+# def valid_user_data():
+#     return {
+#         'name': 'Franz',
+#         'age': 36,
+#         'email': 'email@example.cum',
+#         'password': 'fucktypos'
+#     }
 
 # mock simulates register_user function and returns return_value
 # so the test is tested
